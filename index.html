@@ -1,38 +1,40 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Web Personal</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-    <header>
-        <h1>Bienvenido a mi Proyecto Web Personal</h1>
-        <nav>
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto Web Personal</title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Bienvenido a mi Proyecto Web Personal</h1>
+            <div id="nav-placeholder"></div>
+        </header>
+
+        <main>
+            <section>
+                <h2>Introducción</h2>
+                <p>Este es un breve resumen de mi proyecto web personal.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Sígueme en:</p>
             <ul>
-                <li><a href="src/acercade.html">Acerca de</a></li>
-                <li><a href="src/portfolio.html">Portfolio</a></li>
-                <li><a href="src/portada.html">Portada</a></li>
-                <li><a href="src/contacto.html">Contacto</a></li>
+                <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
             </ul>
-        </nav>
-    </header>
+        </footer>
 
-    <main>
-        <section>
-            <h2>Introducción</h2>
-            <p>Este es un breve resumen de mi proyecto web personal.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>Sígueme en:</p>
-        <ul>
-            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-        </ul>
-    </footer>
-</body>
-</html>
+        <script>
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                });
+        </script>
+    </body>
+    </html>
