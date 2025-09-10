@@ -3,19 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de Mí</title>
-    <link rel="stylesheet" href="/styles/acercade.css">
+    <title>Acerca de - Mi Web Personal</title>
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
-    <!-- Incluir navegación común -->
-    <iframe src="../nav.html" style="width: 100%; border: none;"></iframe>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="../index.html">Portada</a></li>
+            <li><a href="acercade.html" class="active">Acerca de</a></li>
+            <li><a href="portfolio.html">Portafolio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <div class="container">
-        <div class="photo"></div>
-        <div class="description">
-            <h1>Quién Soy</h1>
-            <p>Hola, soy [Tu Nombre], un apasionado de [tu profesión o pasatiempo]. Me encanta [breve descripción de tus intereses o logros].</p>
+    <!-- Header with background image -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1>Acerca de Mí</h1>
+            <p class="subtitle">Conoce mi historia, experiencia y pasiones</p>
         </div>
-    </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="profile-section">
+            <div class="profile-image">
+                👤
+            </div>
+            <div class="profile-content">
+                <h2>¿Quién Soy?</h2>
+                <p>¡Hola! Soy un desarrollador web apasionado por crear experiencias digitales excepcionales. Con años de experiencia en el campo de la tecnología, me especializo en el desarrollo frontend y backend.</p>
+                <p>Mi filosofía es simple: combinar creatividad con funcionalidad para crear soluciones que no solo se vean bien, sino que también resuelvan problemas reales.</p>
+                <p>Cuando no estoy programando, disfruto explorando nuevas tecnologías, leyendo sobre innovaciones en el mundo tech, y compartiendo conocimientos con la comunidad de desarrolladores.</p>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <h2>Mis Habilidades</h2>
+            <div class="highlight-grid">
+                <div class="highlight-item">
+                    <h3>Frontend</h3>
+                    <p>HTML5, CSS3, JavaScript, React, Vue.js. Creación de interfaces intuitivas y responsivas.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, PHP. Desarrollo de APIs robustas y sistemas escalables.</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>Herramientas</h3>
+                    <p>Git, Docker, VS Code, Figma. Flujo de trabajo optimizado y colaborativo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Sígueme en:</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://www.github.com" target="_blank">GitHub</a>
+            </div>
+            <p class="copyright">&copy; 2024 Mi Web Personal. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
